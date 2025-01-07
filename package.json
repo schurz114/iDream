@@ -1,20 +1,21 @@
 {
-  "name": "dreamconnect",
-  "main": "app/app.ts",
+  "name": "my-expo-app",
   "version": "1.0.0",
-  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
   "dependencies": {
-    "@nativescript/core": "~8.8.0",
-    "@nativescript/theme": "~3.0.2",
-    "openai": "^4.28.0"
+    "expo": "~50.0.0",
+    "expo-status-bar": "~1.11.1",
+    "react": "18.2.0",
+    "react-native": "0.73.4"
   },
   "devDependencies": {
-    "@nativescript/preview-cli": "^1.0.14",
-    "@nativescript/stackblitz": "^0.0.8",
-    "@nativescript/tailwind": "^2.1.0",
-    "@nativescript/types-minimal": "~8.8.0",
-    "@nativescript/webpack": "~5.0.0",
-    "tailwindcss": "~3.4.0",
-    "typescript": "~5.4.0"
-  }
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
 }
