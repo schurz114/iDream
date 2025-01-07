@@ -1,0 +1,13 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <StackLayout class="p-6">
+        <Label text="Welcome to DreamConnect" class="text-3xl font-bold text-center mb-8" />
+        
+        <TextField hint="Email" text="{{ email }}" keyboardType="email" class="input mb-4 p-4 border rounded" />
+        <TextField hint="Password" text="{{ password }}" secure="true" class="input mb-6 p-4 border rounded" />
+        
+        <Button text="Sign In" tap="{{ onSignIn }}" class="btn btn-primary mb-4" />
+        <Button text="Sign Up" tap="{{ onSignUp }}" class="btn btn-secondary" />
+        
+        <Label text="{{ errorMessage }}" class="text-red-500 text-center mt-4" textWrap="true" />
+    </StackLayout>
+</Page>
